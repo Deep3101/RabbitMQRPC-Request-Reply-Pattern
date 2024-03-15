@@ -8,11 +8,11 @@
         <version>3.2.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.rabbitmq.client</groupId>
-    <artifactId>Client</artifactId>
+    <groupId>com.rabbitmq.server</groupId>
+    <artifactId>Server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Client</name>
-    <description>Demo project for Spring Boot with Rabbitmq</description>
+    <name>Server</name>
+    <description>Demo project for Spring Boot with RabbitMQ RPC</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -24,6 +24,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -39,11 +43,6 @@
             <groupId>org.springframework.amqp</groupId>
             <artifactId>spring-rabbit-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <scope>annotationProcessor</scope>
         </dependency>
     </dependencies>
 
